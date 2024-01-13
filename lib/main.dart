@@ -1,5 +1,6 @@
-import 'package:demo_session01/home_page.dart';
+import 'package:demo_session01/route.dart';
 import 'package:flutter/material.dart';
+import 'package:demo_session01/main_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,9 +18,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const homepage(),
-      debugShowCheckedModeBanner: false,
+      routes: routes,
+      home: MainPage(),
     );
   }
 }
-
